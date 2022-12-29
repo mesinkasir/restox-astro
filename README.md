@@ -1,3 +1,3 @@
-# restox-astro
+# Astro starter template
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/withastro-astro-hu1zr4)
+Run Demo : (https://restox.axcora.com)[https://restox.axcora.com]

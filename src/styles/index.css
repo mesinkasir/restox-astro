@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(241, 238, 245);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.slim {
+  font-size: 10px;
+}

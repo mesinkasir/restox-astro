@@ -1,0 +1,11 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION,cover,downloadlink } from '../../config';
+---
+<div class="col-md-8 p-3 p-md-5">
+<h1><strong><a href="/" title={SITE_TITLE}>{SITE_TITLE}</a></strong></h1>
+<h2>{SITE_DESCRIPTION}</h2>
+<p><a href={downloadlink} class="btn btn-dark">Download Now</a>
+</div>	
+<div class="col-md-4 p-3 p-md-5">
+<img class="img-fluid rounded" alt={SITE_DESCRIPTION} loading="lazy" width="100%" height="100%" src={cover}/>
+</div>

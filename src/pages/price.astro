@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, } from '../config';
+import {title,description,standard,standardtext,standardcover,standardprice,standardpay,premium,premiumtext,premiumcover,premiumprice,premiumpay,btn } from '../data/price';
+---
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0" />
+<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+<body>
+<div class="container">
+<Header title={SITE_TITLE} />
+<main class="row">
+<div class="col-md-12 p-3 p-md-5 text-center">
+<h1><strong><a href="/price/">{title}</a></strong></h1>
+<h2>{description}</h2>
+</div>
+<div class="col-md-4 p-3 p-md-5">
+<img class="img-fluid" alt={title} src={standardcover} width="100%" height="100%"/>
+</div>
+<div class="col-md-8 p-3 p-md-5">
+<div class="p-3 p-md-5 bg-light rounded shadow">
+<h3><strong><a href="/price">{standard}</a></strong></h3>
+<p>{standardtext}</p>
+<p><strong>{standardprice}</strong></p>
+<p><a href={standardpay} class="btn btn-dark">{btn} {standard}</a></p>
+</div>
+</div>
+<div class="col-md-4 p-3 p-md-5">
+<img class="img-fluid" alt={title} src={premiumcover} width="100%" height="100%"/>
+</div>
+<div class="col-md-8 p-3 p-md-5">
+<div class="p-3 p-md-5 bg-light rounded shadow">
+<h3><strong><a href="/price">{premium}</a></strong></h3>
+<p>{premiumtext}</p>
+<p><strong>{premiumprice}</strong></p>
+<p><a href={premiumpay} class="btn btn-dark">{btn} {premium}</a></p>
+</div>
+</div>
+</main>
+<Footer />
+</div>
+</body>
+</html>

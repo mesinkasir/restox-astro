@@ -1,0 +1,60 @@
+---
+import {intro,introcontent,mesinkasir,website,mobile,qrcode,whatsapp,android,complete,mesinkasirvideo,websitevideo,mobilevideo,qrcodevideo,whatsappvideo,androidvideo,completevideo,mesinkasircontent,websitecontent,mobilecontent,qrcodecontent,whatsappcontent,androidcontent,completecontent,introtext } from '../../../data/demo';
+---  
+<div class="tab-content col-md-10 col-10 p-3" id="pills-tabContent">
+  <div class="tab-pane fade show active p-3" id="pills-intro" role="tabpanel" aria-labelledby="pills-intro-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={intro}>{intro}</a></strong></h3>
+<p>{introtext}</p>
+<p>{introcontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-mesinkasir" role="tabpanel" aria-labelledby="pills-mesinkasir-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={mesinkasir}>{mesinkasir}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={mesinkasirvideo} loading="lazy" class="rounded"  title="{mesinkasir}" allowfullscreen></iframe>
+</div>
+<p>{mesinkasircontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={website}>{website}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={websitevideo} loading="lazy" class="rounded" title={website} allowfullscreen></iframe>
+</div>
+<p>{websitecontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={mobile}>{mobile}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={mobilevideo} loading="lazy" class="rounded" title={mobile} allowfullscreen></iframe>
+</div>
+<p>{mobilecontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-qrcode" role="tabpanel" aria-labelledby="pills-qrcode-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={qrcode}>{qrcode}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={qrcodevideo} loading="lazy" class="rounded" title={qrcode} allowfullscreen></iframe>
+</div>
+<p>{qrcodecontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={whatsapp}>{whatsapp}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={whatsappvideo} loading="lazy" class="rounded" title={whatsapp} allowfullscreen></iframe>
+</div>
+<p>{whatsappcontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-android" role="tabpanel" aria-labelledby="pills-android-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={android}>{android}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={androidvideo} loading="lazy" class="rounded" title={android} allowfullscreen></iframe>
+</div>
+<p>{androidcontent}</p>
+  </div>
+  <div class="tab-pane fade p-3" id="pills-premium" role="tabpanel" aria-labelledby="pills-premium-tab" tabindex="0">
+  <h3><strong><a href="/demo" title={complete}>{complete}</a></strong></h3>
+<div class="ratio ratio-16x9">
+  <iframe src={completevideo} loading="lazy" class="rounded" title={complete} allowfullscreen></iframe>
+</div>
+<p>{completecontent}</p>
+  </div>
+</div>
+</div>

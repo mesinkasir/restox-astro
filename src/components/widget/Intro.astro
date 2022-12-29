@@ -1,0 +1,16 @@
+---
+import { SITE_TITLE,SITE_DESCRIPTION} from '../../config';
+import {intro,introcover,introtxt1,introtxt2,introbtn1,introbtn2,introbtn1link,introbtn2link } from '../../data/home';
+---
+<div class="col-md-12 p-3 p-md-5">
+<div class="row bg-light rounded">
+<div class="col-md-4 p-3 p-md-5">
+<img class="img-fluid" alt={SITE_DESCRIPTION} width="100%" height="100%" src={introcover}/>
+</div>
+<div class="col-md-8 p-3 p-md-5">
+<h3><strong><a href="/" title={SITE_TITLE}>{intro}</a></strong></h3>
+<p>{introtxt1}</p><p>{introtxt2}</p>
+<p><a href={introbtn1link} class="btn btn-dark">{introbtn1}</a> <a href={introbtn2link} class="btn btn-outline-dark">{introbtn2}</a></p>
+</div>
+</div>
+</div>

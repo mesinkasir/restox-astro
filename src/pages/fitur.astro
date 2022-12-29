@@ -1,0 +1,47 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION,fiturtitle,fiturdescription,fiturcover } from '../config';
+
+const posts = (await Astro.glob('./fitur/*.{md,mdx}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+	<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0" />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<div class="container">
+		<main class="row">
+		<Header />
+			<section class="col-md-12 p-3 p-md-5">
+			<h1><strong><a href="/fitur/">{fiturtitle}</a></strong></h1>
+			<h2>{fiturdescription}</h2>
+			</div>
+			<section class="col-md-12 p-3 p-md-5">
+				<div class="row">
+			<div class="col-md-4 p-3 p-md-5 mt-5">
+			<img class="img-fluid" width="100%" height="100%" alt={fiturtitle} src={fiturcover}/>
+				</div>
+			<div class="col-md-8 p-3 p-md-5">
+					{
+						posts.map((post) => (
+							<a href={post.url}>
+							<h3><strong>{post.frontmatter.title}</strong></h3>
+							<p>{post.frontmatter.description}</p>
+							</a>
+						))
+					}
+				</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+		</div>
+	</body>
+</html>

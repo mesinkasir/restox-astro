@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		video: string;
+		updatedDate?: string;
+		heroImage?: string;
+	};
+}
+
+const {
+	content: { title, description, pubDate, updatedDate, heroImage,video },
+} = Astro.props;
+---
+
+<html lang="id">
+	<head>
+	<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0" />
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+	<div class="container">
+		<main class="row">
+		<Header />
+			<article class="col-md-12 p-3 p-md-5">
+				{heroImage && <img width={720} height={360} src={heroImage} alt={title} />}
+			<h1><strong><a href="/">{title}</a></strong></h1>
+				<hr />
+				<h2>{description}</h2>
+				<div class="ratio ratio-16x9">
+  <iframe src={video} loading="lazy" class="rounded"  title={title} allowfullscreen></iframe>
+</div>
+<div class="p-3">
+				<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+		</div>
+	</body>
+</html>

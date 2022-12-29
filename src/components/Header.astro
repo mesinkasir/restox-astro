@@ -1,0 +1,19 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE ,menu1,menu2,menu3,menu4,menu1link,menu2link,menu3link,menu4link} from '../config';
+---
+
+<header class="row p-3">
+	<p class="col-md-4 col-3 nav-brand">
+		<strong><a href="/">{SITE_TITLE}</a></strong>
+	</p>
+	<nav class="nav col-md-8 col-9 justify-content-end">
+		<HeaderLink class="nav-link" href={menu1link}>{menu1}</HeaderLink>
+		<HeaderLink class="nav-link" href={menu2link}>{menu2}</HeaderLink>
+		<HeaderLink class="nav-link" href={menu3link}>{menu3}</HeaderLink>
+		<HeaderLink class="nav-link" href={menu4link}>{menu4}</HeaderLink>
+	</nav>
+</header>
+<style>
+	a,.nav-brand,.nav-link {color: black; text-decoration:none;}
+</style>

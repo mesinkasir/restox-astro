@@ -20,4 +20,4 @@ export const menu4link = '/price';
 export const fiturtitle = 'Fitur Aplikasi Restoran Resto-X';
 export const fiturdescription =
   'Resto-X Web app fitur detail - bekerja dengan aplikasi restoran resto-x';
-export const fiturcover = 'aplikasirestoran (5).svg';
+export const fiturcover = '/aplikasirestoran (5).svg';

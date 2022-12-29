@@ -4,7 +4,7 @@ export const description =
 export const standard = 'STANDARD';
 export const standardtext =
   'Aplikasi Kasir restoran cafe rumah makan resto-x web app + Website integrasi + Aplikasi Android backend admin';
-export const standardcover = 'aplikasirestoran (8).svg';
+export const standardcover = '/aplikasirestoran (8).svg';
 export const standardprice = 'Rp.1.564.800/Tahun';
 export const standardpay = 'https://app.midtrans.com/payment-links/resto-x-std';
 export const premium = 'PREMIUM';

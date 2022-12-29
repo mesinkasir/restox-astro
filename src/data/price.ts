@@ -10,7 +10,7 @@ export const standardpay = 'https://app.midtrans.com/payment-links/resto-x-std';
 export const premium = 'PREMIUM';
 export const premiumtext =
   'Aplikasi Kasir restoran cafe rumah makan resto-x web app + Website integrasi + QRCode Menu Digital + Online Order + Whatsapp Order + Aplikasi Android backend admin + Aplikasi Android informasi pelanggan frontend';
-export const premiumcover = 'aplikasirestoran (12).svg';
+export const premiumcover = '/aplikasirestoran (12).svg';
 export const premiumprice = 'Rp.3.246.800/Tahun';
 export const btn = 'Order Now';
 export const premiumpay = 'https://app.midtrans.com/payment-links/resto-x-pro';
